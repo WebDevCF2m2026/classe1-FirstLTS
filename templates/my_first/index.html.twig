@@ -1,0 +1,11 @@
+{# on hérite du template #}
+{% extends 'my_first/template.html.twig' %}
+
+{# on écrase le block desc pour le faire disparaitre #}
+{% block desc %}{% endblock %}
+
+{# on surcharge le block title d'un parent en utilisant {{ parent() }} #}
+{% block title %}{{ parent() }}Page d'accueil{% endblock %}
+
+{% block main %}index{% endblock %}
+
